@@ -1,0 +1,29 @@
+fieldset {
+  margin: 20px;
+  padding: 20px;
+  width: 300px;
+  font-family: "微软雅黑";
+  font-size: 20px;
+}
+input[type="radio"],
+input[type="checkbox"] {
+  display: none;
+}
+label {
+  margin-left: 50px;
+  padding-left: 30px;
+  cursor: pointer;
+  font-size: 16px;
+}
+.checkbox {
+  background: url(checkbox-radio-bg.png) no-repeat 0px -100px;
+}
+.radio {
+  background: url(checkbox-radio-bg.png) no-repeat 0px -0px;
+}
+input[type="checkbox"]:checked + label {
+  background-position: 0px -150px;
+}
+input[type="radio"]:checked + label {
+  background-position: 0px -50px;
+}

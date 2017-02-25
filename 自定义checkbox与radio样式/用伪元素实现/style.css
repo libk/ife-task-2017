@@ -1,0 +1,48 @@
+fieldset {
+  margin: 20px;
+  padding: 20px;
+  width: 300px;
+  font-family: "微软雅黑";
+  font-size: 20px;
+}
+input[type="radio"],
+input[type="checkbox"] {
+  display: none;
+}
+label {
+  margin-left: 50px;
+  padding-left: 30px;
+  cursor: pointer;
+  font-size: 16px;
+  position: relative;
+}
+label::before {
+  content: "";
+  border: 2px solid green;
+  width: 16px;
+  height: 16px;
+  display: inline-block;
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+}
+.radio::before {
+  border-radius: 16px;
+}
+.checkbox::before {
+  border-radius: 3px;
+}
+input[type="checkbox"]:checked + label::before {
+  content: "\2714";
+  color: green;
+  font-size: 16px;
+  line-height: 16px;
+  text-align: center
+}
+input[type="radio"]:checked + label::before {
+  content: "\2022";
+  color: green;
+  font-size: 35px;
+  line-height: 13px;
+  text-align: center;
+}
